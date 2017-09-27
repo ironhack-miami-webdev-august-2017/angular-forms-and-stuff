@@ -1,0 +1,9 @@
+<blockquote>
+  <h3> Quote #{{ myQuote.id }}</h3>
+  <p class="quote"> {{ myQuote.text }} </p>
+  <p class="author"> {{ myQuote.author }} </p>
+
+  <button (click)="notifyForDeletion()">
+    Delete
+  </button>
+</blockquote>
