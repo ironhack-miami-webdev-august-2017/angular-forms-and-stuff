@@ -1,0 +1,16 @@
+<h2> Contact List </h2>
+
+<ul>
+  <li *ngFor="let oneContact of contactThang.contacts">
+    <h3> {{ oneContact.name }} </h3>
+    <p> Phone: {{ oneContact.phone }} </p>
+    <b> ID: {{ oneContact.id }} </b>
+    <br>
+
+    <button (click)="contactThang.deleteContact(oneContact.id)">
+      Delete
+    </button>
+  </li>
+</ul>
+
+<app-contact-form></app-contact-form>
